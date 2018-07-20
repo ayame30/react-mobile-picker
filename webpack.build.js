@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    'react-mobile-picker': './src/index.js'
+    'react-scrollable-picker': './src/index.js'
   },
 
   output: {
