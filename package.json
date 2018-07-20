@@ -1,11 +1,11 @@
 {
-  "name": "react-mobile-picker",
-  "version": "0.1.12",
+  "name": "react-scrollable-picker",
+  "version": "1.0.0",
   "description": "An iOS like select box component for React",
   "main": "lib/react-mobile-picker.js",
   "repository": {
     "type": "git",
-    "url": "adcentury/react-mobile-picker"
+    "url": "ayame30/react-scrollable-picker"
   },
   "dependencies": {
     "prop-types": "^15.6.0"
