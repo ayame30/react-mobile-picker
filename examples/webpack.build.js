@@ -20,7 +20,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      'react-mobile-picker': path.join(__dirname, '..', 'src')
+      'react-scrollable-picker': path.join(__dirname, '..', 'src')
     }
   },
 

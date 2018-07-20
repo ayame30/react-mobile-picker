@@ -40,7 +40,7 @@ class PickerColumn extends Component {
 
   computeTranslate = (props) => {
     const {options, value, itemHeight, columnHeight} = props;
-    let selectedIndex = options.map(option => option.value).indexOf(value);
+    let selectedIndex = options.map((option) => option.value).indexOf(value);
     if (selectedIndex < 0) {
       // throw new ReferenceError();
       console.warn('Warning: "' + this.props.name+ '" doesn\'t contain an option of "' + value + '".');

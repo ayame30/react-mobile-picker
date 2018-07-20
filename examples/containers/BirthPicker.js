@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Picker from 'react-mobile-picker';
+import Picker from 'react-scrollable-picker';
 
 function generateNumberArray(begin, end) {
   let array = [];
