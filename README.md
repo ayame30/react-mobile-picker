@@ -1,7 +1,7 @@
 A branch fork from https://github.com/adcentury/react-mobile-picker#readme
 to add support for `{value: 'm', label: 'Male'}` option format.
 
-# React Mobile Picker
+# React Scrollable Picker forked from React Mobile Picker
 
  [![npm](https://img.shields.io/npm/dm/react-scrollable-picker.svg)](https://www.npmjs.com/package/react-scrollable-picker) [![GitHub license](https://img.shields.io/github/license/ayame30/react-scrollable-picker.svg)](https://github.com/ayame30/react-scrollable-picker/blob/master/LICENSE)
 
