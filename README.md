@@ -1,3 +1,6 @@
+A branch fork from https://github.com/adcentury/react-mobile-picker#readme
+to add support for `{value: 'm', label: 'Male'}` option format.
+
 # React Mobile Picker
 
 [![Travis](https://img.shields.io/travis/adcentury/react-mobile-picker.svg)](https://travis-ci.org/adcentury/react-mobile-picker) [![npm](https://img.shields.io/npm/dm/react-mobile-picker.svg)](https://www.npmjs.com/package/react-mobile-picker) [![GitHub license](https://img.shields.io/github/license/adcentury/react-mobile-picker.svg)](https://github.com/adcentury/react-mobile-picker/blob/master/LICENSE)
@@ -64,10 +67,24 @@ class App extends Component {
         secondName: 'Jordan'
       }, 
       optionGroups: {
-        title: ['Mr.', 'Mrs.', 'Ms.', 'Dr.'],
-        firstName: ['John', 'Micheal', 'Elizabeth'],
-        secondName: ['Lennon', 'Jackson', 'Jordan', 'Legend', 'Taylor']
-      }
+        title: [
+          { value: 'mr', label: 'Mr.' },
+          { value: 'ms', label: 'Ms.' },
+          { value: 'dr', label: 'Dr.' },
+        ],
+        firstName: [
+          { value: 'John', label: 'John' },
+          { value: 'Micheal', label: 'Micheal' },
+          { value: 'Elizabeth', label: 'Elizabeth' },
+        ],
+        secondName: [
+          { value: 'Lennon', label: 'Lennon' },
+          { value: 'Jackson', label: 'Jackson' },
+          { value: 'Jordan', label: 'Jordan' },
+          { value: 'Legend', label: 'Legend' },
+          { value: 'Taylor', label: 'Taylor' }
+        ],
+      },
     };
   }
 

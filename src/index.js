@@ -4,7 +4,16 @@ import './style.less';
 
 class PickerColumn extends Component {
   static propTypes = {
-    options: PropTypes.array.isRequired,
+    options: PropTypes.arrayOf(PropTypes.shape({
+      value: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+      ]),
+      label: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+      ]),
+    })).isRequired,
     name: PropTypes.string.isRequired,
     value: PropTypes.any.isRequired,
     itemHeight: PropTypes.number.isRequired,
@@ -31,11 +40,11 @@ class PickerColumn extends Component {
 
   computeTranslate = (props) => {
     const {options, value, itemHeight, columnHeight} = props;
-    let selectedIndex = options.indexOf(value);
+    let selectedIndex = options.map(option => option.value).indexOf(value);
     if (selectedIndex < 0) {
       // throw new ReferenceError();
       console.warn('Warning: "' + this.props.name+ '" doesn\'t contain an option of "' + value + '".');
-      this.onValueSelected(options[0]);
+      this.onValueSelected(options[0].value);
       selectedIndex = 0;
     }
     return {
@@ -99,7 +108,7 @@ class PickerColumn extends Component {
       } else {
         activeIndex = - Math.floor((scrollerTranslate - maxTranslate) / itemHeight);
       }
-      this.onValueSelected(options[activeIndex]);
+      this.onValueSelected(options[activeIndex].value);
     }, 0);
   };
 
@@ -128,13 +137,13 @@ class PickerColumn extends Component {
         height: itemHeight + 'px',
         lineHeight: itemHeight + 'px'
       };
-      const className = `picker-item${option === value ? ' picker-item-selected' : ''}`;
+      const className = `picker-item${option.value === value ? ' picker-item-selected' : ''}`;
       return (
         <div
           key={index}
           className={className}
           style={style}
-          onClick={() => this.handleItemClick(option)}>{option}</div>
+          onClick={() => this.handleItemClick(option.value)}>{option.label}</div>
       );
     });
   }

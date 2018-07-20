@@ -5,7 +5,11 @@ import Picker from 'react-mobile-picker';
 function generateNumberArray(begin, end) {
   let array = [];
   for (let i = begin; i <= end; i++) {
-    array.push((i < 10 ? '0' : '') + i);
+    const value = (i < 10 ? '0' : '') + i;
+    array.push({
+      value: (i < 10 ? '0' : '') + i,
+      label: (i < 10 ? '0' : '') + i,
+    });
   }
   return array;
 }

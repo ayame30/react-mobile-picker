@@ -7,15 +7,29 @@ export default class NamePicker extends Component {
     super(props);
     this.state = {
       valueGroups: {
-        title: 'Mr.',
+        title: 'mr',
         firstName: 'Micheal',
         secondName: 'Jordan'
       }, 
       optionGroups: {
-        title: ['Mr.', 'Mrs.', 'Ms.', 'Dr.'],
-        firstName: ['John', 'Micheal', 'Elizabeth'],
-        secondName: ['Lennon', 'Jackson', 'Jordan', 'Legend', 'Taylor']
-      }
+        title: [
+          { value: 'mr', label: 'Mr.' },
+          { value: 'ms', label: 'Ms.' },
+          { value: 'dr', label: 'Dr.' },
+        ],
+        firstName: [
+          { value: 'John', label: 'John' },
+          { value: 'Micheal', label: 'Micheal' },
+          { value: 'Elizabeth', label: 'Elizabeth' },
+        ],
+        secondName: [
+          { value: 'Lennon', label: 'Lennon' },
+          { value: 'Jackson', label: 'Jackson' },
+          { value: 'Jordan', label: 'Jordan' },
+          { value: 'Legend', label: 'Legend' },
+          { value: 'Taylor', label: 'Taylor' }
+        ],
+      },
     };
   }
 
