@@ -3,7 +3,7 @@ to add support for `{value: 'm', label: 'Male'}` option format.
 
 # React Mobile Picker
 
-[![Travis](https://img.shields.io/travis/adcentury/react-mobile-picker.svg)](https://travis-ci.org/adcentury/react-mobile-picker) [![npm](https://img.shields.io/npm/dm/react-mobile-picker.svg)](https://www.npmjs.com/package/react-mobile-picker) [![GitHub license](https://img.shields.io/github/license/adcentury/react-mobile-picker.svg)](https://github.com/adcentury/react-mobile-picker/blob/master/LICENSE)
+ [![npm](https://img.shields.io/npm/dm/react-scrollable-picker.svg)](https://www.npmjs.com/package/react-scrollable-picker) [![GitHub license](https://img.shields.io/github/license/ayame30/react-scrollable-picker.svg)](https://github.com/ayame30/react-scrollable-picker/blob/master/LICENSE)
 
 React Mobile Picker is a super simple component with no restriction, which means you can use it in any way you want.
 
@@ -15,12 +15,12 @@ React Mobile Picker is a super simple component with no restriction, which means
 
 Scan this Qr in you mobile.
 
-Or visit (in mobile or mobile simulator): [http://adcentury.github.io/react-mobile-picker](http://adcentury.github.io/react-mobile-picker)
+Or visit (in mobile or mobile simulator): [http://ayame30.github.io/react-scrollable-picker](http://ayame30.github.io/react-scrollable-picker)
 
 ## Install
 
 ```
-npm install react-mobile-picker --save
+npm install react-scrollable-picker --save
 ```
 
 ## Usage
@@ -28,13 +28,13 @@ npm install react-mobile-picker --save
 ### ES6
 
 ```javascript
-import Picker from 'react-mobile-picker';
+import Picker from 'react-scrollable-picker';
 ```
 
 ### CommonJS
 
 ```javascript
-var Picker = require('react-mobile-picker');
+var Picker = require('react-scrollable-picker');
 ```
 
 ## Props
@@ -55,7 +55,7 @@ Here is an example of how to integrate React Mobile Picker:
 
 ```javascript
 import React, {Component} from 'react';
-import Picker from 'react-mobile-picker';
+import Picker from 'react-scrollable-picker';
 
 class App extends Component {
   constructor(props) {
